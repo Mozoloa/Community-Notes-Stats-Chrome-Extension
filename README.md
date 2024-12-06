@@ -1,5 +1,7 @@
 # A simple extension showing stats of the noter above his note. Feel free to contribute.
 
+Note that this is for community notes contributors, the stats will only display on the post's community notes page
+
 ![Screenshot](Screenshot.png)
 
 ## More Info
