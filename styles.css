@@ -1,0 +1,68 @@
+/* styles.css */
+#birdwatch-stats {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+}
+
+#birdwatch-stats .aliasDiv {
+    font-weight: bold;
+    color: hsl(30, 85%, 65%);
+}
+
+#birdwatch-stats .scoreDiv {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    overflow: hidden;
+    height: 18px;
+}
+
+.leftRound {
+    border-radius: 3px 0 0 3px;
+}
+
+.rightRound {
+    border-radius: 0 3px 3px 0;
+}
+
+#birdwatch-stats .text {
+    background-color: hsl(220, 12%, 10%);
+    color: hsl(0, 0%, 20%);
+    color: hsl(200, 7%, 91%);
+    flex-grow: 1;
+    margin-left: 5px;
+}
+
+#birdwatch-stats .ratingPercent {
+    margin-right: 3px;
+}
+
+#birdwatch-stats .commonSpan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+    padding: 0 5px;
+}
+
+#birdwatch-stats .positiveScore {
+    /* background-color: gradient of green */
+
+    color: hsl(120, 65%, 50%);
+    border: 1px solid hsl(120, 60%, 45%);
+    height: 90%;
+}
+
+#birdwatch-stats .negativeScore {
+    color: hsl(0, 65%, 50%);
+    border: 1px solid hsl(0, 60%, 45%);
+    height: 90%;
+}
