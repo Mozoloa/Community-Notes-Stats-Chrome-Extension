@@ -1,0 +1,1 @@
+A simple extension showing stats of the noter above his note. Feel free to contribute
