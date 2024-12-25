@@ -16,21 +16,24 @@
     "content_scripts": [
         {
             "matches": [
-                "https://x.com/i/birdwatch/t/*"
+                "https://x.com/*"
             ],
             "js": [
                 "content.js"
             ],
-            "run_at": "document_start",
             "css": [
                 "styles.css"
-            ]
+            ],
+            "run_at": "document_start"
         }
     ],
     "web_accessible_resources": [
         {
             "resources": [
-                "inject.js"
+                "interceptor.js",
+                "parser.js",
+                "domInjector.js",
+                "mainInject.js"
             ],
             "matches": [
                 "https://x.com/*"
