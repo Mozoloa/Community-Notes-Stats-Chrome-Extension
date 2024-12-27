@@ -73,8 +73,8 @@ window.addEventListener("locationchange", () => {
     const currentUrl = location.href;
     console.log("[content.js] location changed ->", currentUrl);
 
-    // Example check: Are we on a Birdwatch page?
-    if (currentUrl.includes("/i/birdwatch/t/")) {
+    // Example check: Are we on a Birdwatch or "communitynotes" page?
+    if (currentUrl.includes("/i/birdwatch/t/") || currentUrl.includes("/i/communitynotes/t/")) {
         // If no ?forceRefresh=1 in the URL, add it once and reload
         if (!currentUrl.includes("forceRefresh=1")) {
             console.log("[content.js] Birdwatch page w/o forceRefresh param -> reloading with it...");
@@ -98,7 +98,7 @@ window.addEventListener("locationchange", () => {
     console.log("[content.js] Initial check ->", currentUrl);
 
     // Are we already on Birdwatch with forceRefresh=1?
-    if (currentUrl.includes("/i/birdwatch/t/") && currentUrl.includes("forceRefresh=1")) {
+    if ((currentUrl.includes("/i/birdwatch/t/") || currentUrl.includes("i/communitynotes/t/")) && currentUrl.includes("forceRefresh=1")) {
         console.log("[content.js] Direct load with forceRefresh=1 -> injecting scripts...");
         injectAllScripts();
     }
